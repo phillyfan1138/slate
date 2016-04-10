@@ -141,7 +141,7 @@ This command runs a model.
 
 `wss://myBank.com:<PORT>/ws/`
 
-Note that the ability to run a model depends on the level of permission.  A person authorized for level 7 may run the EC model but not the Market Risk Model, for example.  This command is necessarily websocket based as each model hosts its own websocket server.  The inputs value should correspond to the results of the request for the model inputs.  The port comes from the results of the request for the model inputs.
+Note that the ability to run a model depends on the level of permission.  A person authorized for level 7 may run the EC model but not the Market Risk Model, for example.  This command is necessarily websocket-based as each model hosts its own websocket server.  The inputs value should correspond to the results of the request for the model inputs.  The port comes from the results of the request for the model inputs.
 
 ##Get most recent model results
 
@@ -242,7 +242,7 @@ request.get(url, function(error, response, body){
   "timestamp": "<JAVASCRIPT_TIMESTAMP>"
 }
 ```
-This endpoint retrieves the ongoing monitoring results from a given model.
+This endpoint retrieves the assumptions for a given model.
 
 `GET https://myBank.com/v1/models/:MODEL_ID/assumptions`
 
@@ -277,7 +277,7 @@ request.get(url, function(error, response, body){
   "timestamp": "<JAVASCRIPT_TIMESTAMP>"
 }
 ```
-This endpoint retrieves the ongoing monitoring results from a given model.
+This endpoint retrieves the model limitations for a given model.
 
 `GET https://myBank.com/v1/models/:MODEL_ID/limitations`
 
